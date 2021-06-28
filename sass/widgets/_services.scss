@@ -1,0 +1,96 @@
+.services{
+    background: url('../../img/bg.png') 0px 0px no-repeat;
+    background-size: 100%;
+    padding-top: 140px;
+    padding-bottom: 0;
+    @media screen and (max-width: 991px) {
+        padding: 60px 0 40px;
+    }
+
+
+    .services-slider{
+        max-width: $width + 40px;
+        padding: 0 20px;
+        margin: 0 auto;
+
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        .slick-list{
+            @media screen and (min-width: 767px) {
+                overflow: inherit;
+            }
+        }
+        .slick-track{
+            display: flex;
+        }
+        .slick-arrow{
+            position: absolute;
+            top: -120px;
+            width: 65px;
+            height: 65px;
+            border-radius: 50%;
+            background: $primary-color;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            @media screen and (max-width: 991px) {
+                top: -83px;
+            }
+            
+
+            &:hover{
+                background: $primary-color-dark;
+            }
+            
+            &.arrow-prev{
+                right: 80px;
+                svg{
+                    margin: 0 8px 0 0;
+                }
+                
+            }
+            &.arrow-next{
+                right: 0;
+                svg{
+                    margin: 0 0 0 8px;
+                }
+            }
+            &.slick-disabled{
+                background: #879bf4;
+            }
+        }
+
+        &-item_icon{
+            text-align: center;
+        }
+
+        &-item{
+            background: #fff;
+            padding: 25px;
+            max-width: 340px;
+            width: 100%;
+            margin: 0  15px 30px;
+            height: auto;
+            max-width: calc(100% / 3 - 30px);
+            @media screen and (max-width: 767px) {
+               margin: 0 0 20px;
+               max-width: 100%;
+            }
+            
+            &_title{
+                font-family: $fontOxy;
+                font-size: 24px;
+                font-weight: 600;
+                margin-top: 30px;
+            }
+            &_text{
+                margin-top: 20px;
+                font-size: 18px;
+            }
+            
+        }
+
+    }
+}

@@ -1,0 +1,114 @@
+.header{
+    padding: 20px 0;
+    position: relative;
+
+    .container{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .logo{
+        svg{
+            width: 150px;
+        }
+    }
+
+    .slogan{
+        font-family: $sriracha;
+        font-size: 16px;
+        padding: 15px 0 15px 30px;
+        margin: 0 0 0 30px;
+        border-left: 1px solid #00bec0;
+
+    }
+
+
+    .wrap-nav{
+        display: flex;
+        align-items: center;
+        @media screen and (max-width: 991px) {
+            transform: translateY(-126%);
+            transition: all linear .2s;
+            &.open{
+                transform: translateY(0);
+            }
+        }
+        .button{
+            margin: 0 0 0 25px;
+            font-size: 16px;
+            font-family: $nunito;
+            @media screen and (max-width: 991px) {
+                margin: 0;
+            }
+        }
+
+        @media screen and (max-width: 991px) {
+           position: absolute;
+           background: #fff;
+           flex-direction: column;
+           align-items: center;
+           width: 100%;
+           left: 0;
+           top: 78px;
+           z-index: 100;
+           padding: 30px 0 60px;
+           box-shadow: inset 0px 4px 12px -6px rgba(0, 0, 0, 0.1) ;
+        }
+    }
+
+    .navigation-list{
+        display: flex;
+        align-items: center;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        @media screen and (max-width: 991px) {
+            flex-direction: column;
+        }
+        li{
+            margin: 0 15px 0 0;
+            @media screen and (max-width: 991px) {
+                text-align: center;
+                margin: 0 0 35px;
+            }
+            .link{
+                font-weight: 600;
+                font-size: 14px;
+                font-family: $nunito;
+            }
+        }
+    }
+
+    
+
+    .mobile-switcher{
+        background: transparent;
+        border: none;
+        padding: 0;
+        @media screen and (min-width: 991px) {
+            display: none;
+        }
+       
+        .line-1, .line-2, .line-3 {
+            width: 35px;
+            height: 5px;
+            background-color: $primary-color;
+            margin: 6px 0;
+            transition: 0.4s;
+          }
+
+          &.open{
+            .line-1 {
+                -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+                transform: rotate(-45deg) translate(-9px, 6px);
+              }
+              .line-2 {opacity: 0;}
+              .line-3 {
+                -webkit-transform: rotate(45deg) translate(-8px, -8px);
+                transform: rotate(45deg) translate(-8px, -8px);
+              }
+          }
+
+    }
+}

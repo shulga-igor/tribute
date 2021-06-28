@@ -1,0 +1,169 @@
+.banner{
+    background: url(../img/bg_banner.jpg) 0px 0px no-repeat;
+    background-size: 100% 99%;
+    padding: 100px 0;
+    @media screen and (max-width: 991px) {
+        padding-bottom: 80px;
+        background-position: center;
+    }
+    @media screen and (max-width: 767px) {
+        padding-top: 30px;
+     }
+    .slider-banner{
+        @media screen and (max-width: 991px) {
+            padding-bottom: 60px;
+        }
+        .item{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            color: #fff;
+            .text-blc{
+                padding: 0 20px 0 0;
+                @media screen and (max-width: 767px) {
+                   padding: 0;
+                }
+            }
+
+            .sub-title{
+                font-size: 30px;
+                margin: 0;
+                @media screen and (max-width: 991px) {
+                    font-size: 24px;
+                }
+                @media screen and (max-width: 767px) {
+                    font-size: 18px;
+                }
+            }
+
+            .title{
+                font-size: 58px;
+                margin: 30px 0 0 0;
+                font-family: $fontOxy;
+                @media screen and (max-width: 991px) {
+                    font-size: 40px;
+                    margin-top: 20px;
+                }
+                @media screen and (max-width: 767px) {
+                    font-size: 24px;
+                }
+            }
+
+            .text{
+                font-size: 24px;
+                margin: 30px 0 0 0;
+                @media screen and (max-width: 991px) {
+                    font-size: 18px;
+                    margin-top: 20px;
+                }
+                @media screen and (max-width: 767px) {
+                    font-size: 16px;
+                    br{
+                        display: none;
+                    }
+                }
+            }
+
+            .button{
+                margin-top: 30px;
+            }
+
+
+            .img-blc{
+                @media screen and (max-width: 767px) {
+                    display: none;
+                }
+                img{
+                    @media screen and (max-width: 991px) {
+                        width: 90%;
+                        margin: 0 0 0 10%;
+                    }
+                    
+                }
+            }
+
+        }
+
+        .slick-arrow{
+            position: absolute;
+            top: calc(50% - 29px);
+            width: 59px;
+            height: 59px;
+            border-radius: 50%;
+            background: #294bde;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            z-index: 2;
+            @media screen and (max-width: 991px) {
+                top: 100%;
+            }
+            &:hover{
+                background: $primary-color-dark;
+            }
+            
+            &.arrow-prev{
+                left: -95px;
+                @media screen and (max-width: 991px) {
+                    left: 0;
+                }
+                svg{
+                    margin: 0 8px 0 0;
+                }
+                
+            }
+            &.arrow-next{
+                right: -95px;
+                @media screen and (max-width: 991px) {
+                    right: 0;
+                }
+                svg{
+                    margin: 0 0 0 8px;
+                }
+            }
+            &.slick-disabled{
+                background: #879bf4;
+            }
+        }
+
+
+        .slick-dots{
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            list-style: none;
+            position: absolute;
+            bottom: -40px;
+            left: 50%;
+            transform: translateX(-50%);
+            @media screen and (max-width: 991px) {
+                padding: 0 70px;
+            }
+
+            button{
+                width: 23px;
+                height: 23px;
+                background: #3e5eea;
+                border-radius: 50%;
+                border: none;
+                font-size: 0;
+                box-shadow: 0px 0px 5px rgba(0,0,0, .2);
+                cursor: pointer;
+            }
+
+            li{
+                margin: 0 4px;
+            }
+            .slick-active{
+                button{
+                    background: #002ae4;
+                }
+            }
+        }
+        
+    }
+
+}

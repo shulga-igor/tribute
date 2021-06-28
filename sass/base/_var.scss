@@ -1,0 +1,32 @@
+@font-face {
+    font-family: 'Sriracha-Regular';
+    src: url('../../fonts/Sriracha-Regular.eot');
+    src: url('../../fonts/Sriracha-Regular.eot?#iefix') format('embedded-opentype'),
+         url('../../fonts/Sriracha-Regular.svg#Sriracha-Regular') format('svg'),
+         url('../../fonts/Sriracha-Regular.ttf') format('truetype'),
+         url('../../fonts/Sriracha-Regular.woff') format('woff'),
+         url('../../fonts/Sriracha-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+$width: 1140px;
+
+$primary-color: #6e59ed;
+$error: #ff0000;
+$success: #13c132;
+$primary-color-dark: #6400eb;
+$text-color: #192225;
+$action-color: #2fcb00;
+$action-color-hover: #002ae4;
+$action-text-color: #fff;
+$second-color: #f5f5f5;
+$text-light: #f5f5f5;
+$base-white: #ffffff;
+
+
+$sriracha: 'Sriracha-Regular', sans-serif;
+$nunito: 'Nunito Sans', sans-serif;
+$fontPop: 'Poppins', sans-serif;
+$montserrat: 'Montserrat', sans-serif;
+$fontOxy: $nunito;

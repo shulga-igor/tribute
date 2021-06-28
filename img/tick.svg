@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="64px" height="64px" viewBox="0 0 64 64" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>tick</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="20943798" transform="translate(-13923.000000, -3170.000000)">
+            <g id="tick" transform="translate(13923.000000, 3170.000000)">
+                <circle id="Oval-3" fill="#44B223" cx="32" cy="32" r="32"></circle>
+                <g transform="translate(16.000000, 21.000000)" fill="#FFFFFF" fill-rule="nonzero" id="Shape">
+                    <path d="M31.4699103,0.529964912 C30.8463158,-0.0936920078 29.8352904,-0.0936920078 29.2115712,0.529964912 L10.0799376,19.6617856 L2.72605068,12.3078986 C2.10245614,11.6842417 1.0914308,11.6843041 0.467711501,12.3078986 C-0.155945419,12.9314932 -0.155945419,13.9425185 0.467711501,14.5661754 L8.95076803,23.0491072 C9.57417544,23.6727018 10.5859493,23.6722651 11.2091072,23.0491072 L31.4699103,2.78830409 C32.0935673,2.16470955 32.0935049,1.15362183 31.4699103,0.529964912 Z"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
