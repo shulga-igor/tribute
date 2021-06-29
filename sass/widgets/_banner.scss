@@ -2,12 +2,25 @@
     background: url(../img/bg_banner.jpg) 0px 0px no-repeat;
     background-size: 100% 99%;
     padding: 100px 0;
+    min-height: 672px;
+    position: relative;
     @media screen and (max-width: 991px) {
         padding-bottom: 80px;
         background-position: center;
     }
     @media screen and (max-width: 767px) {
         padding-top: 30px;
+     }
+     .slick-slider{
+         position: static;
+         .slick-list{
+            position: static;
+            overflow: inherit;
+            .slick-track{
+                position: static;
+                
+            }
+         }
      }
     .slider-banner{
         @media screen and (max-width: 991px) {
@@ -20,24 +33,14 @@
             color: #fff;
             .text-blc{
                 padding: 0 20px 0 0;
+                min-width: 720px;
                 @media screen and (max-width: 767px) {
                    padding: 0;
                 }
             }
 
-            .sub-title{
-                font-size: 30px;
-                margin: 0;
-                @media screen and (max-width: 991px) {
-                    font-size: 24px;
-                }
-                @media screen and (max-width: 767px) {
-                    font-size: 18px;
-                }
-            }
-
             .title{
-                font-size: 58px;
+                font-size: 56px;
                 margin: 30px 0 0 0;
                 font-family: $fontOxy;
                 @media screen and (max-width: 991px) {
@@ -70,6 +73,11 @@
 
 
             .img-blc{
+                /* position: absolute;
+                top: 0;
+                right: -34%; 
+                left: 58%;*/
+                transform: translateX(-8%);
                 @media screen and (max-width: 767px) {
                     display: none;
                 }
@@ -136,7 +144,7 @@
             justify-content: center;
             list-style: none;
             position: absolute;
-            bottom: -40px;
+            bottom: 93px;
             left: 50%;
             transform: translateX(-50%);
             @media screen and (max-width: 991px) {
@@ -144,22 +152,23 @@
             }
 
             button{
-                width: 23px;
-                height: 23px;
-                background: #3e5eea;
+                width: 14px;
+                height: 16px;
+                background: transparent;
                 border-radius: 50%;
                 border: none;
                 font-size: 0;
-                box-shadow: 0px 0px 5px rgba(0,0,0, .2);
+                border: 2px solid #fff;
+                //box-shadow: 0px 0px 5px rgba(0,0,0, .2);
                 cursor: pointer;
             }
 
             li{
-                margin: 0 4px;
+                margin: 0 8px;
             }
             .slick-active{
                 button{
-                    background: #002ae4;
+                    background: #fff;
                 }
             }
         }
