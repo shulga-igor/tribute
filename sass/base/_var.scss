@@ -1,14 +1,14 @@
 @font-face {
     font-family: 'Sriracha-Regular';
-    src: url('../../fonts/Sriracha-Regular.eot');
-    src: url('../../fonts/Sriracha-Regular.eot?#iefix') format('embedded-opentype'),
-         url('../../fonts/Sriracha-Regular.svg#Sriracha-Regular') format('svg'),
-         url('../../fonts/Sriracha-Regular.ttf') format('truetype'),
-         url('../../fonts/Sriracha-Regular.woff') format('woff'),
-         url('../../fonts/Sriracha-Regular.woff2') format('woff2');
+    src: url('../fonts/Sriracha-Regular.eot');
+    src: url('../fonts/Sriracha-Regular.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Sriracha-Regular.svg#Sriracha-Regular') format('svg'),
+         url('../fonts/Sriracha-Regular.ttf') format('truetype'),
+         url('../fonts/Sriracha-Regular.woff') format('woff'),
+         url('../fonts/Sriracha-Regular.woff2') format('woff2');
     font-weight: normal;
     font-style: normal;
-  }
+}
 
 $width: 1140px;
 
