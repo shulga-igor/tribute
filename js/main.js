@@ -15,6 +15,8 @@ $( window ).load(function() {
         dots: true,
         infinite: false,
         arrows: false,
+        autoplay: true,
+        autoplaySpeed: 7000,
     });
 
 
