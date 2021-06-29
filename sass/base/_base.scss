@@ -391,3 +391,9 @@ input{
 h1, h2, h3, h4, h5, h6{
   font-family: $nunito;
 }
+
+.mobile-center{
+  @media screen and (max-width: 767px) {
+    text-align: center;
+  }
+}
