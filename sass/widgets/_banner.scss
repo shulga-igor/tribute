@@ -5,11 +5,12 @@
     min-height: 672px;
     position: relative;
     @media screen and (max-width: 991px) {
-        padding-bottom: 80px;
-        background-position: center;
+        background-size: cover;
+        background-position: right;
     }
     @media screen and (max-width: 767px) {
         padding-top: 30px;
+        min-height: auto;
      }
      .slick-slider{
          position: static;
@@ -31,11 +32,18 @@
             align-items: center;
             justify-content: space-between;
             color: #fff;
+            @media screen and (max-width: 991px) {
+                flex-direction: column;
+             }
             .text-blc{
                 padding: 0 20px 0 0;
                 min-width: 720px;
+                @media screen and (max-width: 1199px) {
+                    min-width: 500px;
+                 }
                 @media screen and (max-width: 767px) {
                    padding: 0;
+                   min-width: auto;
                 }
             }
 
@@ -43,7 +51,7 @@
                 font-size: 56px;
                 margin: 30px 0 0 0;
                 font-family: $fontOxy;
-                @media screen and (max-width: 991px) {
+                @media screen and (max-width: 1199px) {
                     font-size: 40px;
                     margin-top: 20px;
                 }
@@ -55,7 +63,7 @@
             .text{
                 font-size: 24px;
                 margin: 30px 0 0 0;
-                @media screen and (max-width: 991px) {
+                @media screen and (max-width: 1199px) {
                     font-size: 18px;
                     margin-top: 20px;
                 }
@@ -78,12 +86,16 @@
                 right: -34%; 
                 left: 58%;*/
                 transform: translateX(-8%);
-                @media screen and (max-width: 767px) {
-                    display: none;
+                @media screen and (max-width: 1199px) {
+                    transform: translateX(-1%);
                 }
+                @media screen and (max-width: 991px) {
+                    transform: none;
+                 }
                 img{
                     @media screen and (max-width: 991px) {
-                        width: 90%;
+                        width: 100%;
+                        height: auto;
                         margin: 0 0 0 10%;
                     }
                     

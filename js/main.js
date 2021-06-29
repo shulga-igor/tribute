@@ -18,36 +18,8 @@ $( window ).load(function() {
     });
 
 
-    if(width <= 767){
-        chooseSlider();
-        stepsSlider();
-    }
-
-    function chooseSlider() {
-        $('.choose .list').slick({
-            slidesToShow: 1,
-            slidesToScroll: 1,
-            infinite: false,
-            prevArrow: '<div class="arrow-prev"><div>',
-            nextArrow: '<div class="arrow-next"><div>',
-        });
-    }
-
-    function stepsSlider() {
-        $('.steps .steps-list').slick({
-            slidesToShow: 1,
-            slidesToScroll: 1,
-            infinite: false,
-            prevArrow: '<div class="arrow-prev"><div>',
-            nextArrow: '<div class="arrow-next"><div>',
-            centerPadding: '60px',
-        });
-    }
-
     
     
-
-
     $('.mobile-switcher').on('click', function(e){
         e.preventDefault();
         

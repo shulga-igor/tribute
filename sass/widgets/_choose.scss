@@ -8,7 +8,7 @@
         }
         @media screen and (max-width: 767px) {
             margin: 40px 0 0;
-            box-shadow: 0px 0px 20px #eee;
+            flex-direction: column;
         }
         &--item{
             width: 100%;
@@ -16,15 +16,13 @@
             margin: 0 15px;
             padding: 30px 30px 50px;
             border: 1px solid #ecedee;
-            //box-shadow: 0px 0px 20px #eee;
-            //transition: all linear .2s;
             @media screen and (max-width: 991px) {
                 max-width: calc(100% / 3 - 16px);
                 margin: 0 8px;
-                //padding: 25px 10px 30px;
             }
             @media screen and (max-width: 767px) {
-                margin: 10px;
+                max-width: 100%;
+                margin: 0 0 20px;
                 box-shadow: none;
             }
             
@@ -58,12 +56,12 @@
         &.arrow-prev{
             background: url(../img/arrow=grey-left.png);
             background-size: 100%;
-            left: 3px;
+            left: -10px;
         }
         &.arrow-next{
             background: url(../img/arrow=grey-right.png);
             background-size: 100%;
-            right: 3px;
+            right: -10px;
         }
     }
     

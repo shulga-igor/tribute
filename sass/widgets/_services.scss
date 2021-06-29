@@ -5,8 +5,14 @@
     padding-bottom: 0;
     @media screen and (max-width: 991px) {
         padding: 60px 0 40px;
+        background-size: 200%;
+        background-position: top;
     }
-
+    @media screen and (max-width: 767px) {
+        background-size: 1000% 91%;
+        background-position: 92% 0%;
+    }
+    
 
     .services-slider{
         max-width: $width + 40px;
@@ -74,6 +80,9 @@
             margin: 0  15px 30px;
             height: auto;
             max-width: calc(100% / 3 - 30px);
+            @media screen and (max-width: 991px) {
+                max-width: calc(100% / 2 - 30px);
+            }
             @media screen and (max-width: 767px) {
                margin: 0 0 20px;
                max-width: 100%;
