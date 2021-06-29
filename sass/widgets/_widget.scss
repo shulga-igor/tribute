@@ -150,6 +150,13 @@
         }
     }
 
+    .btn-center{
+        margin: 0 0 0 35px;
+        @media screen and (max-width: 1199px) {
+            margin: 0;
+        }
+    }
+
     &.reverse{
         @media screen and (min-width: 991px) {
             .container{
