@@ -320,6 +320,7 @@ body{
   @media screen and (max-width: 1199px) {
     padding: 15px 20px;
   }
+  
   &:hover{
       transition: all linear .2s;
       background: $primary-color-dark;
@@ -329,8 +330,9 @@ body{
     background: #44b223;
     &:hover{
       background: #2fcb00;
+    }
   }
-  }
+
 }
 
 .link{

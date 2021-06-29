@@ -1,12 +1,24 @@
 .inner-banner{
-    background: $primary-color;
-    padding: 30px 0;
-
+    padding: 15px 0;
+    border-top: 3px solid #00bec0;
+    
     .inner-title{
         font-size: 40px;
         font-family: $fontOxy;
         font-weight: 600;
-        color: #fff;
+        position: relative;
+        padding: 0 0 30px 0;
+        margin-bottom: 0;
+        &:before{
+            content: '';
+            position: absolute;
+            width: 120px;
+            height: 4px;
+            background: $primary-color;
+            bottom: 10px;
+            left: 0%;
+
+        }
         @media screen and (max-width: 991px) {
             font-size: 24px;
         }
@@ -16,6 +28,7 @@
 
 .inner-text-blc{
     font-size: 18px;
+    padding-top: 0;
     p{
         margin: 0 0 50px;
         @media screen and (max-width: 991px) {
@@ -26,9 +39,14 @@
     }
     a{
         color: $primary-color;
+        font-family: $montserrat;
+        font-weight: 600;
         &:hover{
             color: $action-color;
         }
+    }
+    strong{
+        font-family: $fontOxy;
     }
     ul{
         margin-bottom: 50px;
